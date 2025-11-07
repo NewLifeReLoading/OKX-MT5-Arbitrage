@@ -1,0 +1,17 @@
+cd /c/OKX-MT5-Arbitrage/
+# 4. 清理build目录
+rm -rf build/*
+
+# 1. 清空目录内文件（保留文件夹）
+rm -rf build/*
+# 2. 再删空目录
+rmdir build
+# 1. 建目录
+mkdir build
+cd build
+cmake ..
+cmake --build .
+
+# 6. 测试
+./test_config.exe ../config/config.json
+./test_api_validator.exe

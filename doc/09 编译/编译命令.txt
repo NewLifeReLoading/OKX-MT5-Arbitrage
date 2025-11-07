@@ -1,0 +1,17 @@
+cd /c/OKX-MT5-Arbitrage/
+# 4. 清理build目录
+rm -rf build/*
+
+# 5. 重新编译
+cd build
+cmake ..
+cmake --build .
+# 重新构建
+cd build
+rm -rf *
+cmake ..
+cmake --build .
+
+# 6. 测试
+./test_config.exe ../config/config.json
+./test_api_validator.exe

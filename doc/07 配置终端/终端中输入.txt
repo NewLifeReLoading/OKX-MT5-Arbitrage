@@ -1,0 +1,1 @@
+echo 'cd "/c/OKX-MT5-Arbitrage"' >> ~/.bashrc

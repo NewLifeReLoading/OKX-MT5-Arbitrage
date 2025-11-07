@@ -1,0 +1,57 @@
+{
+  "version": "1.0",
+  "environment": "production",
+  
+  "okx": {
+    "simulation": {
+      "api_key": "cfd780d7-6dc6-4fee-bb27-d7a4608d2fa8",
+      "secret_key": "4DD3E6E14B69380235D2D585DDE5B5B5",
+      "passphrase": "Abc@123456",
+      "rest_url": "https://www.okx.com",
+      "ws_public": "wss://wspap.okx.com:8443/ws/v5/public?brokerId=9999",
+      "ws_private": "wss://wspap.okx.com:8443/ws/v5/private?brokerId=9999"
+    },
+    "production": {
+      "api_key": "cfd780d7-6dc6-4fee-bb27-d7a4608d2fa8",
+      "secret_key": "4DD3E6E14B69380235D2D585DDE5B5B5",
+      "passphrase": "Abc@123456",
+      "rest_url": "https://www.okx.com",
+      "ws_public": "wss://ws.okx.com:8443/ws/v5/public",
+      "ws_private": "wss://ws.okx.com:8443/ws/v5/private"
+    },
+    "symbols": {
+      "XAUT": "XAUT-USDT-SWAP",
+      "BTC": "BTC-USDT-SWAP",
+      "ETH": "ETH-USDT-SWAP"
+    }
+  },
+  
+  "mt5": {
+    "simulation": {
+      "server": "Demo-Server",
+      "login": 0,
+      "password": ""
+    },
+    "production": {
+      "server": "Live-Server",
+      "login": 0,
+      "password": ""
+    },
+    "symbols": {
+      "XAUT": "XAUUSD",
+      "BTC": "BTCUSD",
+      "ETH": "ETHUSD"
+    }
+  },
+  
+  "strategy": {
+    "first_order": 10.0,
+    "next_order": 5.0,
+    "max_orders": 5,
+    "take_profit": 50.0,
+    "okx_fee_rate": 0.0005,
+    "mt5_fee_rate": 0.0002,
+    "okx_order_size": 1.0,
+    "mt5_order_size": 1.0
+  }
+}
